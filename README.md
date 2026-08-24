@@ -28,11 +28,11 @@ Go to the Shell Developer Portal: [https://developer.shell.com](https://develope
 If you are building with .NET CLI tools then you can also use the following command:
 
 ```bash
-dotnet add package ContextPluginShelSDK --version 1.0.0
+dotnet add package ContextPluginShelSDK --version 1.0.1
 ```
 
 You can also view the package at:
-https://www.nuget.org/packages/ContextPluginShelSDK/1.0.0
+https://www.nuget.org/packages/ContextPluginShelSDK/1.0.1
 
 ## Test the SDK
 
