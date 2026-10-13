@@ -1,0 +1,89 @@
+<!-- Generated file — do not edit; regenerated with the SDK. -->
+
+# UserApi — operations
+
+Accessor: `client.UserApi` · Source: `src/SwaggerPetstoreOpenApi31/Api/UserApi.cs` · 7 operations
+
+**Type sources**: the file declaring each type an operation names (`RawError` excluded — see sdk-map.md).
+
+### CreateUser
+
+- **Signature**: `CreateUser(CreateUserRequest request, RequestOptions? requestOptions = null, CancellationToken cancellationToken = default)`
+- **Returns**: `User`
+- **Error**: `ApiException<RawError>` — **Case B**
+
+| Type | Source |
+| --- | --- |
+| `CreateUserRequest` | `src/SwaggerPetstoreOpenApi31/Requests/UserApi/CreateUserRequest.cs` |
+| `User` | `src/SwaggerPetstoreOpenApi31/Models/User.cs` |
+
+### CreateUsersWithListInput
+
+- **Signature**: `CreateUsersWithListInput(CreateUsersWithListInputRequest request, RequestOptions? requestOptions = null, CancellationToken cancellationToken = default)`
+- **Returns**: `User`
+- **Error**: `ApiException<RawError>` — **Case B**
+
+| Type | Source |
+| --- | --- |
+| `CreateUsersWithListInputRequest` | `src/SwaggerPetstoreOpenApi31/Requests/UserApi/CreateUsersWithListInputRequest.cs` |
+| `User` | `src/SwaggerPetstoreOpenApi31/Models/User.cs` |
+
+### DeleteUser
+
+- **Signature**: `DeleteUser(DeleteUserRequest request, RequestOptions? requestOptions = null, CancellationToken cancellationToken = default)`
+  - required: `Username`
+- **Returns**: `void` (Task)
+- **Error**: `ApiException<DeleteUserError>` — **Case A (typed)**
+- **Error accessors**: `TryGetNoContent(out RawError)` [400, 404] · `TryGetRawError(out RawError)` [fallback]
+
+| Type | Source |
+| --- | --- |
+| `DeleteUserRequest` | `src/SwaggerPetstoreOpenApi31/Requests/UserApi/DeleteUserRequest.cs` |
+| `DeleteUserError` | `src/SwaggerPetstoreOpenApi31/Errors/DeleteUserError.cs` |
+
+### GetUserByName
+
+- **Signature**: `GetUserByName(GetUserByNameRequest request, RequestOptions? requestOptions = null, CancellationToken cancellationToken = default)`
+  - required: `Username`
+- **Returns**: `User`
+- **Error**: `ApiException<GetUserByNameError>` — **Case A (typed)**
+- **Error accessors**: `TryGetNoContent(out RawError)` [400, 404] · `TryGetRawError(out RawError)` [fallback]
+
+| Type | Source |
+| --- | --- |
+| `GetUserByNameRequest` | `src/SwaggerPetstoreOpenApi31/Requests/UserApi/GetUserByNameRequest.cs` |
+| `User` | `src/SwaggerPetstoreOpenApi31/Models/User.cs` |
+| `GetUserByNameError` | `src/SwaggerPetstoreOpenApi31/Errors/GetUserByNameError.cs` |
+
+### LoginUser
+
+- **Signature**: `LoginUser(LoginUserRequest request, RequestOptions? requestOptions = null, CancellationToken cancellationToken = default)`
+- **Query params (wire ← C#)**: `username` ← `Username`, `password` ← `Password`
+- **Returns**: `void` (Task)
+- **Error**: `ApiException<LoginUserError>` — **Case A (typed)**
+- **Error accessors**: `TryGetNoContent(out RawError)` [400] · `TryGetRawError(out RawError)` [fallback]
+
+| Type | Source |
+| --- | --- |
+| `LoginUserRequest` | `src/SwaggerPetstoreOpenApi31/Requests/UserApi/LoginUserRequest.cs` |
+| `LoginUserError` | `src/SwaggerPetstoreOpenApi31/Errors/LoginUserError.cs` |
+
+### LogoutUser
+
+- **Signature**: `LogoutUser(RequestOptions? requestOptions = null, CancellationToken cancellationToken = default)`
+- **Returns**: `void` (Task)
+- **Error**: `ApiException<RawError>` — **Case B**
+
+### UpdateUser
+
+- **Signature**: `UpdateUser(UpdateUserRequest request, RequestOptions? requestOptions = null, CancellationToken cancellationToken = default)`
+  - required: `UsernameTemplate`
+- **Returns**: `void` (Task)
+- **Error**: `ApiException<UpdateUserError>` — **Case A (typed)**
+- **Error accessors**: `TryGetNoContent(out RawError)` [400, 404] · `TryGetRawError(out RawError)` [fallback]
+
+| Type | Source |
+| --- | --- |
+| `UpdateUserRequest` | `src/SwaggerPetstoreOpenApi31/Requests/UserApi/UpdateUserRequest.cs` |
+| `UpdateUserError` | `src/SwaggerPetstoreOpenApi31/Errors/UpdateUserError.cs` |
+
